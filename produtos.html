@@ -30,42 +30,6 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <style>
-    .accordion {
-      color: #444;
-      cursor: pointer;
-      padding: 18px 0px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    .accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .active2:after {
-      content: "\2212";
-    }
-
-    .panel {
-      padding: 0 0px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      font-size: 1em;
-      color: #999999;
-      font-weight: 200;
-    }
-  </style>
 
   <!-- JavaScript -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
@@ -511,52 +475,6 @@
 
 </body>
 
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active2");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
-</script>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  jQuery('#portfolio-demo').slippry({
-    // general elements & wrapper
-    slippryWrapper: '<div class="sy-box portfolio-slider" />', // wrapper to wrap everything, including pager
-
-    // options
-    adaptiveHeight: false, // height of the sliders adapts to current slide
-    start: 'random', // num (starting from 1), random
-    loop: false, // first -> last & last -> first arrows
-    captionsSrc: 'li',
-    captions: 'custom', // Position: overlay, below, custom, false
-    captionsEl: '.external-captions',
-
-    // transitions
-    transition: 'fade', // fade, horizontal, kenburns, false
-    easing: 'linear', // easing to use in the animation [(see... [jquery www])]
-    continuous: false,
-
-    // slideshow
-    auto: false
-  });
-</script>
+<script src="js/scripts.js"></script>
 
 </html>
