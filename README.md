@@ -5,4 +5,4 @@ Atualizado para o projeto finalizado, com as páginas que ficou faltando no proj
 
 Link ver online:
 
-https://nicholasoliveira.github.io/TesteFrontEndJr.github.io/
+https://nicholasoliveira.github.io/Tecommerce-frontEnd-basic/index.html
